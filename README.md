@@ -5,7 +5,7 @@ Vite plugin that strips private fields and methods from the build. While keeping
 
 ```ts
 import { defineConfig } from "vite";
-import vitePluginPrivateFields from "vite-plugin-private-fields";
+import { vitePluginPrivateFields } from "vite-plugin-private-fields";
 
 export default defineConfig({
   plugins: [
