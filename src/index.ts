@@ -19,7 +19,7 @@ export function vitePluginPrivateFields(): Plugin {
 
         const regex = /#(?!version|define|pragma|if|ifdef|elif|else|endif|include)\b([a-zA-Z_$][a-zA-Z0-9_$]*)/g;
         
-        const modifiedCode = code.replace(regex, '$1');
+        const modifiedCode = code.replace(regex, '$1_');
      
         return {
           code: modifiedCode,
